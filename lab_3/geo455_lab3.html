@@ -2,9 +2,93 @@
 <html>
     <head>
        <title>geo455_lab3</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <style type="text/css">
+        #container {
+            height: relative;
+            width: relative;
+            margin-top: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            }
+        #container #map {
+            background-color: #FFFF66;
+            height: 850px;
+            }
+        #container #header {
+            font-size: 2em;
+            font-family: "Lora", serif;
+            letter-spacing: .06em;
+            padding: 12px 15px;
+            background-color: rgba(245, 168, 56, 0.8);
+            border: 1px solid black;
+            border-radius: 3px;
+            text-align: center;
+            }
+        #container #leftMenu {
+            position: absolute;
+            background-color: #EEEEEE;
+            width: 250px;
+            top: 100px;
+            left: 100px;
+            float: right;
+            height: 800px;
+            margin: 2px;
+            font-size: 1em;
+            font-family: "Lora", serif;
+            letter-spacing: .05em;
+            padding: 10px 15px;
+            background-color: rgba(255, 255, 255);
+            border: 1px solid grey;
+            border-radius: 2px;
+            z-index: 800;
+            }
+        #container #footer {
+            clear: both;
+            font-family: "Lora", serif;
+            font-size: 1em;
+            letter-spacing: .04em;
+            height: 25px;
+            background-color: rgba(99, 200, 228, 0.5);
+            border: 1px solid grey;
+            text-align: center;
+            padding-top: 3px;
+            font-style: italic;
+            }
+        body {
+            background-color: rgba(196, 234, 236, 0.8);
+        }
+    </style>
+        
     </head>
-         <body bgcolor="#EDDD9E">
-       <h1 align="center">Lab 3</h1>
-       
-     </body>
+    <body>    
+        <div id="container">
+            <div id="header">Lab 3: Grover Family Annual Texas Trip</div>
+            <div id="leftMenu">
+                <p> <center>Each year in June around father's day and my birthday, my family loads up our transit van and drives around 1,400 miles to the beach in Texas.  We have gotten to know this route and all the cities and communities on the way over the past 15 years, and it has been fascinating to watch it change. Here is that route from my hometown in Minnesota to the beach! </center>    </p>
+                    <ol type="1">
+                        <li> Winona MN </li>
+                        <li> Albert Lea MN</li>   
+                        <li> Des Moines IA</li>
+                        <li> Kansas City MO</li>
+                        <li> Witchita KS</li>
+                        <li> Oklahoma City OK</li>
+                        <li> Dallas TX</li>
+                        <li> Waco TX</li>
+                        <li> Victoria TX</li>
+                        <li> Aransas Pass TX</li>
+                        <li> Port Aransas TX</li>
+                    </ol>
+                <p><img style="width: relative; height: 150px;" src="portaransas.jpg" alt="View of pier and ocean in Port Aransas "></p>
+                <p><i><sup>Photo Credits: Jonathan Cutrer, 2021 </sup></i></p>
+        </div>
+            <div id="map"></div>
+                <script src="map_lab3.js"></script>
+            <div id="footer"> Map developed by Katie Grover</div>
+        </div>   
+</body>
 </html>
