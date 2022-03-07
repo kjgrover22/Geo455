@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body style="background-color:Tomato;"></body>
+    <h2>Webmapping Ex. 03.01 - Variables!</h2>
+
+    <p>below are some fun tidbits from assigned variables</p>
+
+    <p id="add"></p>
+    <p id="sub"></p>
+    <p id="mult1"></p>
+    <p id="mult2"></p>
+    <p id="incree"></p>
+    <p id="decree"></p>
+    <p id="concata"></p>
+    <p id="list"></p>
+    <p id="bool"></p>
+
+    <script>
+        var x = 26;
+        var y = 10;
+        document.getElementById("add").innerHTML = x = y;
+        document.getElementById("sub").innerHTML = x - y;
+        document.getElementById("mult1").innerHTML = x * y;
+        document.getElementById("mult2").innerHTML = x * 26;
+        
+        var z = 13
+        z++;
+        document.getElementById("incree").innerHTML = z;
+        
+        z--;
+        document.getElementById("decree").innerHTML = z;
+
+        var s1 = "John";
+        var s2 = "Doe";
+        document.getElementById("concata").innerHTML = s2+" "+ s2;
+
+        var list = "<ul>";
+        list += "<li>angles</li>";
+        list += "<li>squares</li>";
+        list + "</ul>";
+        document.getElementById("list").innerHTML = list; // returns all values in the list
+
+        document.getElementById("bool").innerHTML = 6 < 9;
+
+    </script>
+
+</body>
+</html>
