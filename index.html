@@ -15,8 +15,22 @@
                 alert("Welcome to Katies site :-)")
             </script>
         </head>
-        <style>
-             body {
+        <style type="text/css">
+                #container #p3 {
+                margin-left: 250px;
+                margin-right: 250px;
+                margin-top: 5px;
+                height: 750px;
+                width: relative;
+                font-size: 1em;
+                font-family: "comic sans ms", serif;
+                letter-spacing: .04em;
+                padding: 10px 50px;
+                background-color: rbga(255. 247, 0.5);
+                border: 1px solid grey;
+                border-radius:100px;
+            }
+            body {
                 margin: 0;
                 padding: 0;
                 background-color:floralwhite;
@@ -40,12 +54,28 @@
                   position: static;
                   color: darkgreen;
                   font-stretch: ultra-expanded;
-                  
               }
+            h4 {
+                text-align: center;
+            }
+            h5 {
+                text-align:center;
+                font-size: 16px;
+            }
+            h6 {
+                text-align: center;
+                font-size: 16px;
+            }
               p {
                   text-align: center;
                   font-variant: small-caps;
               }
+            p3 {
+                font-family: cursive;
+            }
+            p4 {
+                font-family:cursive;
+            }
               ul {
                   font-family: cursive;
                   font-size: 20px;
@@ -53,27 +83,35 @@
                   padding: 6px;
                   text-align: center;
               }
+            ol {
+                text-align:center;
+            }
         </style>  
         <script>
         </script>
     </head>
     <body>
+         <div id="container">
         <h1> Katie's Web Mapping Progress!<h1>
         <h2> GEO 455, Spring '22</h2>
-        <h3>So, what's there to know?</h3>
+            <h3>So, what's there to know?</h3>
         <p>
             This page is meant to keep all my work in one space. I'm a junior.  Some of my favorite things to learn about are urban planning and food availability.  Also a big fan of lavender syrup in coffee and roadtrips. 
         </p>
-        <p2><img style="width: relative; height: 150px;" src="final_pic.jpg"> </p2>
+        <p2><img style="width: relative; height: 175px;" src="final_pic.jpg"> </p2>
         <br>
         <p3>
             Down below, you can select my gender, if you wanna
             </p3>
             <br>
             <br>
-        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="female"> <i> female</i><br>
             <br>
-            <p3> Also, here is a list of concepts I have learned so far!</p3>
+                        <p4> I'll leave my email here for you, just in case</p4>
+                           <a href="mailto:grover7467@uwlax.edu">Link to My Email</a>
+            <br>
+            <br>
+            <p3> Also, here is a dropdown of concepts I have learned so far!</p3>
             <br>
             <br>
         <select name="learned">
@@ -83,10 +121,9 @@
             <option value="geojson">geojson</option>
         </select>
         <ul>
-            Here is a list of my work:</ul>
-            <br>
+            Here is a list of my work from the semester</ul>
             <h4> Labs </h4>
-         <ol>
+         <ul>
              <li><a href="lab_1/geo455_lab1.html">Lab 1</a></li>
              <li><a href="lab_2/geo455_lab2.html">Lab 2</a></li>
              <li><a href="lab_3/geo455_lab3.html">Lab 3</a></li>
@@ -96,14 +133,16 @@
              <li><a href="lab_7/geo455_lab7.html">Lab 7</a></li>
              <li><a href="lab_8/geo455_lab8.html">Lab 8</a></li>
              <li><a href="lab_9/geo455_lab9.html">Lab 9</a></li>
-        </ol>
+        </ul>
         <h5>Exercises</h5>
-         <ol>
+         <ul>
             <li><a href="ex_1/geo455_ex1.html">Ex 1</a></li>
             <li><a href="ex_2/geo455_ex2.html">Ex 2</a></li>
             <li><a href="ex_3/geo455_ex3.html">Ex 3</a></li>
             <li><a href="ex_4/geo455_ex4.html">Ex 4</a></li>
             <li><a href="ex_5/geo455_ex5.html">Ex 5</a></li>
             <li><a href="ex_6/geo455_ex6.html">Ex 6</a></li>
-        </ol>
-       
+        </ul>
+            <h6> Final Project</h6>
+       <ul>
+            <li><a href="index.html"> Final Project </a></li></ul>
