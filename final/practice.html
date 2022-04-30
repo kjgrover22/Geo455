@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>geo455_lab5</title>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+        <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-minimap/v1.0.0/Control.MiniMap.js'></script>
+    <style> 
+        body {
+            height: relative;
+            width: relative;
+            margin-top: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-left: auto;
+            background-color: darkgrey;
+            }
+        #map {
+                position: absolute;
+                top: 100;
+                left: 240;
+                bottom: -140;
+                width: 100%;
+            }
+        #header {
+            font-size: 1.8em;
+            font-family: "Verdana", serif;
+            letter-spacing: .04em;
+            padding: 12px 15px;
+            background-color: rgba(227, 108, 108, 0.8);
+            border: 1px solid black;
+            border-radius: 3px;
+            text-align: center;
+            }
+        #leftMenu {
+            position: static;
+            background-color: #EEEEEE;
+            width: 200px;
+            top: 100px;
+            left: 100px;
+            float: left;
+            height: 800px;
+            margin: 2px;
+            font-size: 1em;
+            font-style: oblique;
+            font-family: "Verdana", serif;
+            letter-spacing: .05em;
+            padding: 10px 15px;
+            background-color: rgba(227, 108, 108, 0.8);
+            border: 1px solid grey;
+            border-radius: 2px;
+            z-index: 800;
+            }
+        #footer {
+            clear: both;
+            font-family: "Verdana", serif;
+            font-size: 1em;
+            letter-spacing: .04em;
+            height: 70px;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            text-align: center;
+            padding-top: 0px;
+            font-style: italic;
+            }
+        }
+    </style>
+    </head>
+     <body>    
+        <div id="container">
+            <div id="header">Visualizing how the Construction of Interstates in the U.S. has Divided Cities and Progressed Redlining and Racial Segrigation</div>
+            <div id="leftMenu">
+                <p> <center> </center>    </p>
+                All across the United States, cities are still facing effects brought by interstate construction in the late 1950s. This map allows you to interact with Popular U.S. Cities and view before and after aerial images of their downtown areas and the changes. In addition, the redlining maps created around the time of urban sprawl are included. 
+                <p><img style="width: 200; height: 150px;" src="interstates_sidebar.jpg" alt="Aerial Photo of Houston TX Interstate System "></p>
+                Legend that you could find on "Residential Security Maps", published in 1937
+                <p> <img style="width: 200; height: 180px" src="legend2.jpg" alt="Historic Redlining Legend">
+                </p>
+        </div>
+                    </div>
+            <div id="map"></div>
+                <script src="practice_4_30.js"></script>
+            <div id="footer"> 
+                Image Source: Robert K. Nelson, LaDale Winling, Richard Marciano, Nathan Connolly,  “Mapping Inequality,” American Panorama, ed. Robert K. Nelson and Edward L. Ayers, accessed April 19, 2022, https://dsl.richmond.edu/panorama/redlining
+                <br>
+                Map Credits: Katie Grover</div> 
+</body>
+</html>
