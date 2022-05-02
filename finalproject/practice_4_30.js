@@ -101,21 +101,21 @@ var myIcon10 = L.icon({
 });
 
 // Create custom popups with images
-var minneapolisPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/44.89/-93.263&city=minneapolis-mn' target='_blank'> Minneapolis, Minnesota <br/><img src='minneapolis1953.jpg' width=350px'/><br/><img src='minneapolis2014.jpg' width=350px'/>";
-var milwaukeePopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=10/42.851/-87.965&city=milwaukee-co.-wi' target='_blank'> Milwaukee, Wisconsin<br/><img src='milwaukee1953.jpg' width=350px'/><br/><img src='milwaukee2014.jpg' width=350px'/>";
-var detroitPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=9/41.986/-83.137&city=detroit-mi' target='_blank'> Detroit, Michigan<br/><img src='detroit1951.jpg' width=350px'/><br/><img src='detroit2010.jpg' width=350px'/>";
-var kansascityPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/38.968/-94.545&city=greater-kansas-city-mo' target='_blank'> Kansas City, Missouri<br/><img src='kansascity1955.jpg' width=350px'/><br/><img src='kansascity2014.jpg' width=350px'/>";
-var bostonPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/42.224/-71.081&city=boston-ma' target='_blank'> Boston, Massachusetts<br/><img src='Boston1938.jpg' width=350px'/><br/><img src='Boston2013.jpg' width=350px'/>";
-var okcityPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=12/35.49/-97.523' target='_blank'> Oklahoma City, Oklahoma<br/><img src='okc1953.jpg' width=350px'/><br/><img src='okc2014.jpg' width=350px'/>";
-var dallasPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=10/32.578/-96.799&city=dallas-tx' target='_blank'> Dallas, Texas<br/><img src='dallas1953.jpg' width=350px'/><br/><img src='dallas2013.jpg' width=350px'/>";
-var atlantaPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=10/33.55/-84.356&city=atlanta-ga' target='_blank'> Atlanta, Georgia<br/><img src='atlanta1952.jpg' width=350px'/><br/><img src='atlanta2013.jpg' width=350px'/>";
-var denverPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=12/39.71/-105.057&city=denver-co' target='_blank'> Denver, Colorado <br/><img src='denver1953.jpg' width=350px'/><br/><img src='denver2014.jpg' width=350px'/>";
-var sanfranPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/37.661/-122.436&city=san-francisco-ca' target='_blank'> San Francisco, California<br/><img src='sanfrancisco1946.jpg' width=350px'/><br/><img src='sanfrancisco2014.jpg' width=350px'/>";
+var minneapolisPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/44.89/-93.263&city=minneapolis-mn' target='_blank'> Minneapolis, Minnesota <br/><img src='minneapolis1953.jpg' width=500px'/><br/><img src='minneapolis2014.jpg' width=500px'/>";
+var milwaukeePopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=10/42.851/-87.965&city=milwaukee-co.-wi' target='_blank'> Milwaukee, Wisconsin<br/><img src='milwaukee1953.jpg' width=500px'/><br/><img src='milwaukee2014.jpg' width=500px'/>";
+var detroitPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=9/41.986/-83.137&city=detroit-mi' target='_blank'> Detroit, Michigan<br/><img src='detroit1951.jpg' width=500px'/><br/><img src='detroit2010.jpg' width=500px'/>";
+var kansascityPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/38.968/-94.545&city=greater-kansas-city-mo' target='_blank'> Kansas City, Missouri<br/><img src='kansascity1955.jpg' width=500px'/><br/><img src='kansascity2014.jpg' width=500px'/>";
+var bostonPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/42.224/-71.081&city=boston-ma' target='_blank'> Boston, Massachusetts<br/><img src='Boston1938.jpg' width=500px'/><br/><img src='Boston2013.jpg' width=500px'/>";
+var okcityPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=12/35.49/-97.523' target='_blank'> Oklahoma City, Oklahoma<br/><img src='okc1953.jpg' width=500px'/><br/><img src='okc2014.jpg' width=500px'/>";
+var dallasPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=10/32.578/-96.799&city=dallas-tx' target='_blank'> Dallas, Texas<br/><img src='dallas1953.jpg' width=500px'/><br/><img src='dallas2013.jpg' width=500px'/>";
+var atlantaPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=10/33.55/-84.356&city=atlanta-ga' target='_blank'> Atlanta, Georgia<br/><img src='atlanta1952.jpg' width=500px'/><br/><img src='atlanta2013.jpg' width=500px'/>";
+var denverPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=12/39.71/-105.057&city=denver-co' target='_blank'> Denver, Colorado <br/><img src='denver1953.jpg' width=500px'/><br/><img src='denver2014.jpg' width=500px'/>";
+var sanfranPopup = "<a href='https://dsl.richmond.edu/panorama/redlining/#loc=11/37.661/-122.436&city=san-francisco-ca' target='_blank'> San Francisco, California<br/><img src='sanfrancisco1946.jpg' width=500px'/><br/><img src='sanfrancisco2014.jpg' width=500px'/>";
 
-var customOptions ={'maxWidth': '600','className' : 'custom'};
+var customOptions ={'maxWidth': '1000','className' : 'custom'};
 
           
-// Data points
+// data points
 coords = [
     [44.966348, -93.269938],
     [43.035873, -87.922848],
@@ -129,7 +129,7 @@ coords = [
     [37.770366, -122.407354]
 ];
 
-// Marker Layergroup
+// marker Layergroup
 var loc = L.layerGroup();
 L.marker(coords[0], {icon: myIcon1}).bindPopup(minneapolisPopup, customOptions).addTo(loc);
 L.marker(coords[1], {icon: myIcon2}).bindPopup(milwaukeePopup, customOptions).addTo(loc);
@@ -143,18 +143,61 @@ L.marker(coords[8], {icon: myIcon9}).bindPopup(denverPopup, customOptions).addTo
 L.marker(coords[9], {icon: myIcon10}).bindPopup(sanfranPopup, customOptions).addTo(loc);
 loc.addTo(mymap);
 
-
-// Add a scalebar 
+// scalebar 
 L.control.scale({position: 'bottomright', maxWidth: '150', metric: 'True'}).addTo(mymap);
 
+// nag buttons
+L.easyButton(('1 height=50%'), function(btn, map){
+    map.setView(coords[0], 10);
+}).addTo(mymap);
+L.easyButton(('2 height=50%'), function(btn, map){
+    map.setView(coords[1], 10);
+}).addTo(mymap);
+L.easyButton(('3 height=50%'), function(btn, map){
+    map.setView(coords[2], 10);
+}).addTo(mymap);
+L.easyButton(('4 height=50%'), function(btn, map){
+    map.setView(coords[3], 10);
+}).addTo(mymap);
+L.easyButton(('5 height=50%'), function(btn, map){
+    map.setView(coords[4], 10);
+}).addTo(mymap);
+L.easyButton(('6 height=50%'), function(btn, map){
+    map.setView(coords[5], 10);
+}).addTo(mymap);
+L.easyButton(('7 height=50%'), function(btn, map){
+    map.setView(coords[6], 10);
+}).addTo(mymap);
+L.easyButton(('8 height=50%'), function(btn, map){
+    map.setView(coords[7], 10);
+}).addTo(mymap);
+L.easyButton(('9 height=50%'), function(btn, map){
+    map.setView(coords[8], 10);
+}).addTo(mymap);
+L.easyButton(('10 height=50%'), function(btn, map){
+    map.setView(coords[9], 10);
+}).addTo(mymap);
 
-// Create menu items
+var miniMap = new L.Control.MiniMap(L.tileLayer('https://api.maptiler.com/maps/topo/{z}/{x}/{y}.png?key=tZnptaeI9RvKHsX18rbW'), {
+    toggleDisplay: true,
+    minimized: true,
+    position: 'bottomleft'
+}).addTo(mymap);
+
+//zoom out button 
+L.easyButton(('<img src="zoom_out.png", height=85%>'), function(btn, map){
+    map.setView([42.433754350687515, -85.77635567694074], 4);
+}).addTo(mymap);
+
+//menu items 
 var baseLayers = {
     'Grayscale': grayscale,
-    'Outdoors': outdoors,
+    'Streets': outdoors,
     'Satellite': satellite,
 	};
 
+var overlays = {
+    'Cities': loc,
+    };
 
-//Create the menu window
-var layerControl = L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(mymap); 
+var layerControl = L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(mymap);
