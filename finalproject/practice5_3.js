@@ -180,15 +180,13 @@ L.easyButton(('10 height=50%'), function(btn, map){
 var miniMap = new L.Control.MiniMap(L.tileLayer('https://api.maptiler.com/maps/topo/{z}/{x}/{y}.png?key=tZnptaeI9RvKHsX18rbW'), {
     toggleDisplay: true,
     minimized: true,
-    position: 'bottomleft'
+    position: 'bottomright'
 }).addTo(mymap);
 
 //zoom out button 
 L.easyButton(('<img src="zoom_out.png", height=85%>'), function(btn, map){
     map.setView([42.433754350687515, -85.77635567694074], 4);
 }).addTo(mymap);
-
-var linestring = L.geoJSON(linestring).addTo(mymap);
 
 //menu items 
 var baseLayers = {
@@ -199,7 +197,28 @@ var baseLayers = {
 
 var overlays = {
     'Cities': loc,
-    'Interstate Extent': linestring,
+    'Interstate Extent': MultiLineString,
     };
 
 var layerControl = L.control.layers(baseLayers, overlays, {collapsed: false}).addTo(mymap);
+
+//minnesota interstates1
+var minnesota = L. geoJSON(minnesota);
+//wisconsin interstates2
+var wisconsin = L. geoJSON(wisconsin);
+//michigan interstates3
+var michigan = L.geoJSON(michigan);
+// mass interstates4
+var mass = L.geoJSON(mass);
+// colorado interstates5
+var colorado = L.geoJSON(colorado);
+// georgia interstates6
+var georgia = L.geoJSON(georgia);
+//kansas interstates7
+var kansas = L.geoJSON(kansas);
+//texas interstates8
+var texas = L.geoJSON(texas);
+//oklahoma interstates9
+var oklahoma = L.geoJSON(oklahoma).addTo(myMap);
+
+
